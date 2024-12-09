@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Filter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href=""><h1>Recipe</h1></a>
+            <ul class="links">
+                <li><a class="link" href="#">Home</a></li>
+                <li><a class="link"  href="#">Recipe</a></li>
+                <li><a class="link"  href="#">About Us</a></li>
+            </ul>
+            <img class="favorite-icon" src="image/2203510_favorite_favourite_heart_love_icon.png" alt="">
+        </nav>
+    </header>
+    <section class="filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+        <button class="filter-btn" data-filter="vegan">Vegan</button>
+        <button class="filter-btn" data-filter="gluten-free">Gluten-Free</button>
+        <button class="filter-btn" data-filter="clear">Clear Filters</button>
+    </section>
+    <section class="search-bar">
+        <input type="search" id="search-input" placeholder="Search for recipes..." />
+    </section>
+    <section class="recipes">
+        <!-- Recipe cards will be dynamically injected here -->
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
