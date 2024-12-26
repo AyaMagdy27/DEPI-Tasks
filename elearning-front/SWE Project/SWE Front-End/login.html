@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+    <link rel="icon" type="image/svg" href="imges/icons/logoicon.svg">
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <section>
+        <div class="login-div">
+
+            <div class="form-container">
+
+                <h1 class="login-title">Welcome To
+                    <span class="color-letter">C</span>ode<span class="color-letter">T</span>ech
+                </h1>
+
+                <div class="toggle-buttons">
+                    <button id="login-btn" class="active">Login</button>
+                    <button id="signup-btn">Signup</button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="login-form" class="form" onsubmit="login(event)">
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-links">
+                        <a href="changePassword.html">Forgot password?</a>
+                    </div>
+                    <!--  -->
+                    <button type="submit" class="submit-btn">Login</button> 
+                </form>
+
+                <!-- Signup Form -->
+                <form id="signup-form" class="form hidden" onsubmit="signup(event)">
+
+                    <div class="form-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-email">Email Address</label>
+                        <input type="email" id="signup-email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-phone">Phone Number</label>
+                        <input type="tel" id="signup-phone" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="Create a password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-confirm-password">Confirm Password</label>
+                        <input type="password" id="signup-confirm-password" placeholder="Confirm your password" required>
+                    </div>
+
+                    <div class="save_password">
+                        <input type="checkbox" id="save_password" name="save_password">
+                        <label for="save_password">Save Password</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Signup</button>
+                </form>
+
+            </div>
+
+            <div class="div-img">
+                <img class="login-img" src="imges/login.jpg" alt="Login Image">
+            </div>
+        </div>
+
+    </section>
+
+    <script src="Js/header.js"></script>
+    <script src="Js/login.js"></script>
+</body>
+
+</html>
